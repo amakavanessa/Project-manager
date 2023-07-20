@@ -12,6 +12,7 @@ module.exports = {
         directory: path.join(__dirname),
       },
     ],
+    allowedHosts: "all",
   },
   output: {
     filename: "bundle.js",

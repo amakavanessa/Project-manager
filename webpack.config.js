@@ -5,6 +5,11 @@ module.exports = {
   mode: "development",
   entry: "./src/app.ts",
   devServer: {
+    compress: true,
+    port: 8081,
+
+    // 👇️ set this property
+    allowedHosts: "all",
     static: [
       {
         directory: path.join(__dirname),
@@ -26,9 +31,6 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
-    devServer: {
-      disableHostCheck: true,
-    },
   },
   resolve: {
     extensions: [".ts", ".js"],
