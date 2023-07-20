@@ -26,6 +26,9 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
+    devServer: {
+      disableHostCheck: true,
+    },
   },
   resolve: {
     extensions: [".ts", ".js"],
