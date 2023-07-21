@@ -7,6 +7,11 @@ module.exports = {
   mode: "production",
   entry: "./src/app.ts",
   devServer: {
+    compress: true,
+    port: 8080,
+
+    // 👇️ set this property
+    allowedHosts: "all",
     static: [
       {
         directory: path.join(__dirname),
