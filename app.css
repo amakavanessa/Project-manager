@@ -105,11 +105,13 @@ button:active {
   color: #313131;
   text-decoration: underline;
   margin: 0.5rem 0;
+  text-transform: capitalize;
 }
 
 #completed-projects li h2 {
   color: #2d486c;
   text-decoration: line-through;
+  text-transform: capitalize;
 }
 
 .projects li h3 {
